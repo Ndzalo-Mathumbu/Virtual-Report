@@ -34,3 +34,6 @@ The core logic is inside `script.js`, which:
 - Checks that inputs are complete and valid.
 - Calculates the total average and updates the report card display.
 - Dynamically changes heading messages and color based on the result.
+
+
+## View Project at (https://ndzalo-nk-virtual-report.netlify.app/)
