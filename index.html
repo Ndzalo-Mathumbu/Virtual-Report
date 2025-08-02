@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Report Generator</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #165ea7; /* linear-gradient(to top left, #2857b4, #6fced5); */
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      button {
+        padding: 0.7rem 1.5rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .report {
+        margin-top: 2rem;
+        background: #afd0ff;
+        padding: 1rem;
+        border-radius: 10px;
+        white-space: pre-wrap;
+        font-family: Arial, Helvetica, sans-serif;
+        /* align-items: center; */
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="myh2">Generate Report Card</h2>
+      <div class="form-group">
+        <label for="studentName">Name</label>
+        <input type="text" class="studentName" />
+      </div>
+      <div class="form-group">
+        <label for="grade">Grade</label>
+        <input type="number" class="grade" />
+      </div>
+      <div class="form-group">
+        <label for="subjects">Subjects (comma-separated)</label>
+        <input
+          type="text"
+          class="subjects"
+          placeholder="e.g. Maths, English, Science"
+        />
+      </div>
+      <div class="form-group">
+        <label for="marks">Marks (comma-separated)</label>
+        <input type="text" class="marks" placeholder="e.g. 75, 80, 68" />
+      </div>
+      <button class="generateReport">Generate Report</button>
+
+      <center><div class="report"></div></center>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
